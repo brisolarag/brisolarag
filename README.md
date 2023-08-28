@@ -33,6 +33,8 @@
   <img align="center" height="25em" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </div>
 
+<br><br>
+
 <div>
- <img display align="right" height="120em" src="https://pandatoryu.files.wordpress.com/2013/03/naruto-sd-gif-de-14ssjgoku-visite-pandatoryu.gif" />
+ <img display align="right" height="100em" src="https://pandatoryu.files.wordpress.com/2013/03/naruto-sd-gif-de-14ssjgoku-visite-pandatoryu.gif" />
 </div>
