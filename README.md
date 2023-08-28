@@ -1,6 +1,9 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=4bf948&height=120&section=header"/>
+
 <div align="center">
- <strong>Gabriel Brisolara</strong><br>
- Cursando Engenharia de Software | Back-End <br><br><br>
+ <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&pause=2000&color=4BF948&width=460&lines=Cursando+Engenharia+de+Software+-+PUCRS;Software+Engineering+Student+-+PUCRS+++" alt="Typing SVG" /></a>
+</div>
+ 
  
 </div>
 
@@ -22,7 +25,13 @@
 <div align="center">
   <img align="center" height="130em" src="https://github-readme-stats.vercel.app/api?username=brisolarag&hide=contribs,prs&theme=merko">
   <img align="center" height="130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=brisolarag&layout=compact&theme=merko">
-</div>
+</div><br>
+
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=brisolarag&bg_color=000000&color=ffffff&line=ffc800&point=4bf948&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+<div align="center">  
+<p align="center"><img align="center" src="https://profile-counter.glitch.me/{brisolarag}/count.svg" /></p> 
+<br></div>
 
 ##
 
@@ -33,13 +42,14 @@
   <a href="https://www.linkedin.com/in/gabriel-brisolara/" target="_blank"><img align="center" alt="brisolara-linkedin" height="25em" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 </div>
 
+<br>
+
+### <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=4bf948&height=120&section=footer"/>
+
+
+##
+
 <br><br>
-
-##
-
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=brisolarag&bg_color=000000&color=ffffff&line=ffc800&point=4bf948&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-##
 
 <div align="center">
  <img display align="center" height="100em" src="https://pandatoryu.files.wordpress.com/2013/03/naruto-sd-gif-de-14ssjgoku-visite-pandatoryu.gif" />
