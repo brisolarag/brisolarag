@@ -17,7 +17,7 @@
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=brisolarag&layout=compact&theme=merko">
 </div>
 
-![Snake animation] (https://www.linkedin.com/in/gabriel-brisolara/)
+![Snake animation] ("https://www.linkedin.com/in/gabriel-brisolara/")
 
 ##
 
