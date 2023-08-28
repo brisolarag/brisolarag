@@ -19,10 +19,6 @@
 
 ##
 
-<img alt="snake eating my contributions" src="https://raw.githubusercontent.com/brisolarag/brisolarag/output/github-contribution-grid-snake.svg" />
-
-##
-
 <div align="center">
   <img align="center" height="25em" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   <img align="center" height="25em" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
