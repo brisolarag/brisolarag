@@ -27,10 +27,10 @@
 ##
 
 <div align="center">
-  <img align="center" alt="brisolara-gmail" href="mailto:dev.brisolara@gmail.com" height="25em" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  <img align="center" alt="brisolara-whats" href="https://wa.me/51999661982" height="25em" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-  <img align="center" alt="brisolara-instagram" href="https://www.instagram.com/gbrisolara/" height="25em" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
-  <img align="center" alt="brisolara-linkedin" href="https://www.linkedin.com/in/gabriel-brisolara/" height="25em" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <a href="mailto:dev.brisolara@gmail.com"><img align="center" alt="brisolara-gmail" height="25em" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://wa.me/51999661982"><img align="center" alt="brisolara-whats" height="25em" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+  <a href="https://www.instagram.com/gbrisolara/"><img align="center" alt="brisolara-instagram" height="25em" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/gabriel-brisolara/"><img align="center" alt="brisolara-linkedin" height="25em" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 </div>
 
 <br><br>
