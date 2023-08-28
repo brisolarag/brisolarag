@@ -12,7 +12,7 @@
 
 ##
 
-<div>
+<div align="center">
   <img height="130em" src="https://github-readme-stats.vercel.app/api?username=brisolarag&hide=contribs,prs&theme=merko">
   <img height="130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=brisolarag&layout=compact&theme=merko">
 </div>
@@ -23,8 +23,8 @@
 
 ##
 
-<strong>Contato:</strong><br>
-<div style="display: flex; justify-content: center;">
+<strong align="center">Contato:</strong><br>
+<div align="center">
   <img align="center" height="25em" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   <img align="center" height="25em" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   <img align="center" height="25em" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
