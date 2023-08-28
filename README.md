@@ -35,6 +35,6 @@
 
 <br><br>
 
-<div>
- <img display align="right" height="100em" src="https://pandatoryu.files.wordpress.com/2013/03/naruto-sd-gif-de-14ssjgoku-visite-pandatoryu.gif" />
+<div align="center">
+ <img display align="center" height="100em" src="https://pandatoryu.files.wordpress.com/2013/03/naruto-sd-gif-de-14ssjgoku-visite-pandatoryu.gif" />
 </div>
