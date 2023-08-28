@@ -13,8 +13,8 @@
 ##
 
 <div align="center">
-  <img height="130em" src="https://github-readme-stats.vercel.app/api?username=brisolarag&hide=contribs,prs&theme=merko">
-  <img height="130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=brisolarag&layout=compact&theme=merko">
+  <img align="center" height="130em" src="https://github-readme-stats.vercel.app/api?username=brisolarag&hide=contribs,prs&theme=merko">
+  <img align="center" height="130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=brisolarag&layout=compact&theme=merko">
 </div>
 
 ##
