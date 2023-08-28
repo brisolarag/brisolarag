@@ -19,7 +19,7 @@
 
 ##
 
-![snake gif](https://github.com/brisolarag/brisolarag/blob/output/github-contribution-grid-snake.svg)
+<img alt="snake eating my contributions" src="https://raw.githubusercontent.com/brisolarag/brisolarag/output/github-contribution-grid-snake.svg" />
 
 ##
 
