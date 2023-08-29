@@ -50,7 +50,3 @@
 ##
 
 <br><br>
-
-<div align="center">
- <img display align="center" height="100em" src="https://pandatoryu.files.wordpress.com/2013/03/naruto-sd-gif-de-14ssjgoku-visite-pandatoryu.gif" />
-</div>
