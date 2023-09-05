@@ -23,14 +23,27 @@
 ##
 <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-   <img height=130 align="center" src="https://github-readme-stats.vercel.app/api?username=brisolarag&theme=merko&hide=contribs,prs" />
+   <img height=150 align="center" src="https://github-readme-stats.vercel.app/api?username=brisolarag&theme=merko&hide=contribs,prs" />
  </a>
  <a href="https://github.com/anuraghazra/convoychat">
-   <img height=130 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=brisolarag&layout=compact&langs_count=8&card_width=320&theme=merko" />
+   <img height=150 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=brisolarag&layout=compact&langs_count=8&card_width=320&theme=merko" />
  </a>
 </div><br>
 
+<div align="center">
+ <a href="https://github.com/anuraghazra/github-readme-stats">
+   <img height=95 align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=TRemover&theme=transparent" />
+ </a>
+ <a href="https://github.com/anuraghazra/convoychat">
+   <img height=95 align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=ChromeTrack&theme=transparent" />
+ </a>
+</div>
+
+<br>
+
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=brisolarag&bg_color=000000&color=ffffff&line=ffc800&point=4bf948&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+<br>
 
 <div align="center">  
 <p align="center"><img align="center" src="https://profile-counter.glitch.me/{brisolarag}/count.svg" /></p> 
