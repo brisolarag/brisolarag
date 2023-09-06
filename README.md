@@ -1,7 +1,7 @@
 ### <p>Hello 👋,  I am Gabriel Brisolara</p> <img align="center"  height="22em" src="https://komarev.com/ghpvc/?username=brisolarag&style=flat-square&color=006aff" />
-a Software Engineer Student, a passionate about solving problems and breaking my head in to algoritms. Coder with the ability to learn by testing. 😂
+I am a Software Engineering student, passionate about solving problems and diving into algorithms. I'm a coder with the ability to learn through experimentation. 😂
 
-- 🔭 Currently working on: Personal projects and Open to Work!!!
+- 🔭 Currently working on: Personal projects and open to new opportunities!!
 - 🌱 Currently learning: C# and .NET Framework
 - 😄 Hobbies: Boxing, Chess, Puzzle Games, and Cooking.
  
