@@ -1,4 +1,5 @@
-### <p>Hello 👋,  I am Gabriel Brisolara</p> <img align="center"  height="22em" src="https://komarev.com/ghpvc/?username=brisolarag&style=flat-square&color=006aff" />
+![image](https://github.com/brisolarag/brisolarag/assets/126127487/811ee1db-0d62-48f1-8d73-db3d081a20c7)
+<br>
 I am a Software Engineering student, passionate about solving problems and diving into algorithms. I'm a coder with the ability to learn through experimentation. 😂
 
 - 🔭 Currently working on: Personal projects and open to new opportunities!!
@@ -6,6 +7,8 @@ I am a Software Engineering student, passionate about solving problems and divin
 - 😄 Hobbies: Boxing, Chess, Puzzle Games, and Cooking.
  
 ##
+
+
 <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
    <img height=150em align="center" src="https://github-readme-stats.vercel.app/api?username=brisolarag&theme=transparent&hide=contribs,prs&hide_border=true" />
@@ -19,6 +22,7 @@ I am a Software Engineering student, passionate about solving problems and divin
 <br>
 
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=brisolarag&theme=github-compact&color=006aff&point=006aff&line=006aff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<img align="right"  height="22em" src="https://komarev.com/ghpvc/?username=brisolarag&style=flat-square&color=006aff" />
 
 <br>
 <div align="center">
