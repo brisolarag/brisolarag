@@ -23,10 +23,10 @@ a Software Engineer Student, a passionate about solving problems and breaking my
 <br>
 <div align="center">
  <a href="https://github.com/anuraghazra/github-readme-stats">
-   <img height=150em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=TRemover&theme=transparent&hide_border=true" />
+   <img height=130em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=TRemover&theme=transparent&hide_border=true" />
  </a>
  <a href="https://github.com/anuraghazra/convoychat">
-   <img height=150em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=ChromeTrack&theme=transparent&hide_border=true" />
+   <img height=130em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=ChromeTrack&theme=transparent&hide_border=true" />
  </a>
 </div>
 
