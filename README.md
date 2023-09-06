@@ -1,8 +1,7 @@
-
-
 <div align="center">
- <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&pause=2000&color=4BF948&width=460&lines=Cursando+Engenharia+de+Software+-+PUCRS;Software+Engineering+Student+-+PUCRS+++" alt="Typing SVG" /></a>
+ <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&pause=2000&color=006aff&width=460&lines=Cursando+Engenharia+de+Software+-+PUCRS;Software+Engineering+Student+-+PUCRS+++" alt="Typing SVG" /></a>
 </div>
+
  
  
 </div>
@@ -20,34 +19,34 @@
   <img align="center" height="20em" src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />               
 </div>
 
+<div align="center">
+ <img align="center" src="https://komarev.com/ghpvc/?username=brisolarag&style=flat-square&color=006aff" />
+</div>
+
 ##
 <div align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-   <img height=150 align="center" src="https://github-readme-stats.vercel.app/api?username=brisolarag&theme=merko&hide=contribs,prs" />
+   <img height=150 align="center" src="https://github-readme-stats.vercel.app/api?username=brisolarag&theme=transparent&hide=contribs,prs&hide_border=true" />
  </a>
  <a href="https://github.com/anuraghazra/convoychat">
-   <img height=150 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=brisolarag&layout=compact&langs_count=8&card_width=320&theme=merko" />
+   <img height=150 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=brisolarag&layout=compact&langs_count=8&card_width=320&theme=transparent&hide_border=true" />
  </a>
 </div><br>
 
 <div align="center">
  <a href="https://github.com/anuraghazra/github-readme-stats">
-   <img height=95 align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=TRemover&theme=transparent" />
+   <img height=95 align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=TRemover&theme=transparent&hide_border=true" />
  </a>
  <a href="https://github.com/anuraghazra/convoychat">
-   <img height=95 align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=ChromeTrack&theme=transparent" />
+   <img height=95 align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=ChromeTrack&theme=transparent&hide_border=true" />
  </a>
 </div>
 
 <br>
 
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=brisolarag&bg_color=000000&color=ffffff&line=ffc800&point=4bf948&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=brisolarag&theme=github-compact&color=006aff&point=006aff&line=006aff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 <br>
-
-<div align="center">  
-<p align="center"><img align="center" src="https://profile-counter.glitch.me/{brisolarag}/count.svg" /></p> 
-<br></div>
 
 ##
 
@@ -62,7 +61,3 @@
 
 
 
-
-##
-
-<br><br>
