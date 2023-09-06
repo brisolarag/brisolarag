@@ -1,5 +1,5 @@
 ![image](https://github.com/brisolarag/brisolarag/assets/126127487/811ee1db-0d62-48f1-8d73-db3d081a20c7)
-<br>
+<br><br>
 I am a Software Engineering student, passionate about solving problems and diving into algorithms. I'm a coder with the ability to learn through experimentation. 😂
 
 - 🔭 Currently working on: Personal projects and open to new opportunities!!
