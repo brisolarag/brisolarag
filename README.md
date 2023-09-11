@@ -26,10 +26,10 @@ I am a Software Engineering student, passionate about solving problems and divin
 
 <br>
 <div align="center">
- <a href="https://github.com/anuraghazra/github-readme-stats">
+ <a href="https://github.com/brisolarag/TRemover">
    <img height=130em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=TRemover&theme=transparent&hide_border=true" />
  </a>
- <a href="https://github.com/anuraghazra/convoychat">
+ <a href="https://github.com/brisolarag/ChromeTrack">
    <img height=130em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=ChromeTrack&theme=transparent&hide_border=true" />
  </a>
 </div>
