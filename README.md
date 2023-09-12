@@ -3,7 +3,7 @@
 I am a Software Engineering student, passionate about solving problems and diving into algorithms. I'm a coder with the ability to learn through experimentation. 😂
 
 - 🔭 Currently working on: Personal projects and open to new opportunities!!
-- 🌱 Currently learning: C# and .NET Framework
+- 🌱 Currently learning: Python, C# and .NET Framework
 - 😄 Hobbies: Boxing, Chess, Puzzle Games, and Cooking.
  
 ##
