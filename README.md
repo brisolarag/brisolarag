@@ -32,6 +32,9 @@ I am a Software Engineering student, passionate about solving problems and divin
  <a href="https://github.com/brisolarag/ChromeTrack">
    <img height=130em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=ChromeTrack&theme=transparent&hide_border=true" />
  </a>
+ <a href="https://github.com/brisolarag/visualizadorEstagiosPUCRS">
+   <img height=130em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=visualizadorEstagiosPUCRS&theme=transparent&hide_border=true" />
+ </a>
 </div>
 
 ##
