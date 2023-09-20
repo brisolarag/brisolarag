@@ -24,20 +24,27 @@ I am a Software Engineering student, passionate about solving problems and divin
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=brisolarag&theme=github-compact&color=006aff&point=006aff&line=006aff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 <img align="right"  height="22em" src="https://komarev.com/ghpvc/?username=brisolarag&style=flat-square&color=006aff" />
 
-<br>
+<br><br>
 <div align="center">
  <a href="https://github.com/brisolarag/TRemover">
-   <img height=130em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=TRemover&theme=transparent&hide_border=true" />
+   <img height=70em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=TRemover&theme=transparent&hide_border=true" />
  </a>
  <a href="https://github.com/brisolarag/ChromeTrack">
-   <img height=130em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=ChromeTrack&theme=transparent&hide_border=true" />
+   <img height=70em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=ChromeTrack&theme=transparent&hide_border=true" />
  </a>
  <a href="https://github.com/brisolarag/visualizadorEstagiosPUCRS">
-   <img height=130em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=visualizadorEstagiosPUCRS&theme=transparent&hide_border=true" />
+   <img height=70em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=visualizadorEstagiosPUCRS&theme=transparent&hide_border=true" />
+ </a>
+ <a href="https://github.com/brisolarag/dfamiliaCafe">
+   <img height=70em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=dfamiliaCafe&theme=transparent&hide_border=true" />
  </a>
  <a href="https://github.com/brisolarag/pomodoroSounds">
-   <img height=130em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=pomodoroSounds&theme=transparent&hide_border=true" />
+   <img height=70em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=pomodoroSounds&theme=transparent&hide_border=true" />
  </a>
+ <a href="https://github.com/brisolarag/dolarViewer">
+   <img height=70em align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=brisolarag&repo=dolarViewer&theme=transparent&hide_border=true" />
+ </a>
+ 
 </div>
 
 ##
