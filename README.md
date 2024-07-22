@@ -2,7 +2,7 @@
 <br><br>
 I am a Software Engineering student, passionate about solving problems and diving into algorithms. I'm a coder with the ability to learn through experimentation. 😂
 
-- 🔭 Currently working on: Personal projects and open to new opportunities!!
+- 🔭 Currently working at **Dell Technologies!!**
 - 🌱 Currently learning: C# | .NET
 - 😄 Hobbies: Boxing, Chess, Speedcube.
  
