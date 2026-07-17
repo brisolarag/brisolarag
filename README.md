@@ -2,7 +2,6 @@
 
 Want to reach out? Send me an [email](mailto:dev.brisolara@gmail.com) 🙂
 
----
 
 ### 🕓 Recent activity
 <!--START_SECTION:waka-->
