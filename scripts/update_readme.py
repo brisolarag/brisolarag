@@ -90,7 +90,7 @@ EVENT_DESCRIPTIONS = {
 }
 
 
-def get_recent_activity(max_events=5):
+def get_recent_activity(max_events=1):
     events = gh_get(f"{API}/users/{USERNAME}/events/public", params={"per_page": max_events})
     lines = []
     for event in events[:max_events]:
@@ -99,21 +99,26 @@ def get_recent_activity(max_events=5):
         payload = dict(event.get("payload", {}))
         payload["repo_name"] = repo_name
         describe = EVENT_DESCRIPTIONS.get(event_type)
-        created_at = event.get("created_at", "")[:10]
+        created_at_raw = event.get("created_at", "")
+        try:
+            dt = datetime.datetime.strptime(created_at_raw, "%Y-%m-%dT%H:%M:%SZ")
+            timestamp = dt.strftime("%Y-%m-%d %H:%M UTC")
+        except ValueError:
+            timestamp = created_at_raw
         if describe:
             try:
-                lines.append(f"- {describe(payload)} ({created_at})")
+                lines.append(f"{describe(payload)} ({timestamp})")
             except Exception:
-                lines.append(f"- {event_type} in {repo_name} ({created_at})")
+                lines.append(f"{event_type} in {repo_name} ({timestamp})")
         else:
-            lines.append(f"- {event_type} in {repo_name} ({created_at})")
+            lines.append(f"{event_type} in {repo_name} ({timestamp})")
     return lines
 
 
 def render_activity_feed(lines):
     if not lines:
-        return "No recent public activity."
-    return "\n".join(lines)
+        return "```text\nNo recent public activity.\n```"
+    return "```text\n" + lines[0] + "\n```"
 
 
 def replace_section(content, section_name, new_body):
@@ -145,14 +150,18 @@ def main():
     prs_today, prs_week = count_prs(start_of_today, start_of_week)
     activity_lines = get_recent_activity()
 
-    # Commits/PRs text
+    # Commits/PRs table
     activity_body = (
-        f"Commited {commits_today} times today\n"
-        f"Commited {commits_week} times this week\n"
-        f"Created {prs_today} pr's today\n"
-        f"Created {prs_week} pr's this week"
+        "| Metric | Today | This week |\n"
+        "|---|---|---|\n"
+        f"| Commits | {commits_today} | {commits_week} |\n"
+        f"| Pull requests | {prs_today} | {prs_week} |"
     )
     content = replace_section(content, "activity", activity_body)
+
+    # Last updated timestamp
+    now_str = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    content = replace_section(content, "last_updated", f"_Last updated: {now_str}_")
 
     # Recent activity feed (replaces the old waka section)
     content = replace_section(content, "waka", render_activity_feed(activity_lines))
