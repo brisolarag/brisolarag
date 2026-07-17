@@ -6,13 +6,17 @@ Want to reach out? Send me an [email](mailto:dev.brisolara@gmail.com) 🙂
 
 ### 🕓 Recent activity
 <!--START_SECTION:waka-->
-No recent public activity.
+- Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-17)
+- Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-17)
+- Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-17)
+- Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-13)
+- Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-13)
 <!--END_SECTION:waka-->
 
 ### 📊 This week's stats
 <!--START_SECTION:activity-->
-Commited 0 times today
-Commited 0 times this week
+Commited 3 times today
+Commited 5 times this week
 Created 0 pr's today
 Created 0 pr's this week
 <!--END_SECTION:activity-->
@@ -22,8 +26,8 @@ Created 0 pr's this week
 <div align="center">
 
 ![Joined GitHub in 2014](https://img.shields.io/badge/Joined-2014-blue)
-![Public Repos](https://img.shields.io/badge/Public%20Repos-20-blue)
-![Gists](https://img.shields.io/badge/Gists-4-blue)
+![Public Repos](https://img.shields.io/badge/Public%20Repos-72-blue)
+![Gists](https://img.shields.io/badge/Gists-0-blue)
 <img src="https://komarev.com/ghpvc/?username=brisolarag&label=Profile%20views&color=blue&style=flat" alt="Profile views" />
 
 </div>
