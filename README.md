@@ -1,17 +1,15 @@
-# Olá, eu sou o Gabriel 👋
+# Hi, I'm Gabriel 👋
 
-Quer entrar em contato? Me manda um [email](mailto:dev.brisolara@gmail.com) 🙂
+Want to reach out? Send me an [email](mailto:dev.brisolara@gmail.com) 🙂
 
 ---
 
-### 💻 Linguagens mais usadas
+### 🕓 Recent activity
 <!--START_SECTION:waka-->
-```text
-Nenhuma linguagem detectada ainda.
-```
+No recent public activity.
 <!--END_SECTION:waka-->
 
-### 📊 Atividade da semana
+### 📊 This week's stats
 <!--START_SECTION:activity-->
 Commited 0 times today
 Commited 0 times this week
