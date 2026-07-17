@@ -52,8 +52,8 @@ def search_count(query):
 def count_prs(start_of_today, start_of_week):
     today_iso = start_of_today.strftime("%Y-%m-%dT%H:%M:%S")
     week_iso = start_of_week.strftime("%Y-%m-%dT%H:%M:%S")
-    prs_today = search_count(f"author:{USERNAME} type:pr created:>={today_iso}")
-    prs_week = search_count(f"author:{USERNAME} type:pr created:>={week_iso}")
+    prs_today = search_count(f"author:{USERNAME} is:pr created:>={today_iso}")
+    prs_week = search_count(f"author:{USERNAME} is:pr created:>={week_iso}")
     return prs_today, prs_week
 
 

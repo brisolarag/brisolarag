@@ -25,7 +25,7 @@ jobs:
 
       - name: Run update script
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
           GITHUB_USERNAME: brisolarag
         run: python scripts/update_readme.py
 
@@ -36,3 +36,5 @@ jobs:
           git add README.md
           git diff --cached --quiet || git commit -m "chore: update README stats [skip ci]"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
