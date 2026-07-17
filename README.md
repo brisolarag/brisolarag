@@ -25,9 +25,8 @@ _Last updated: never_
 
 <div align="center">
 
-![Joined GitHub in 2014](https://img.shields.io/badge/Joined-2014-blue)
+![Joined GitHub in 2023](https://img.shields.io/badge/Joined-2023-blue)
 ![Public Repos](https://img.shields.io/badge/Public%20Repos-72-blue)
-![Gists](https://img.shields.io/badge/Gists-0-blue)
 <img src="https://komarev.com/ghpvc/?username=brisolarag&label=Profile%20views&color=blue&style=flat" alt="Profile views" />
 
 </div>

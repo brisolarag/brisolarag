@@ -170,7 +170,6 @@ def main():
     joined_year = profile["created_at"][:4]
     content = replace_badge(content, "Joined", joined_year)
     content = replace_badge(content, "Public Repos", str(profile.get("public_repos", 0)))
-    content = replace_badge(content, "Gists", str(profile.get("public_gists", 0)))
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
