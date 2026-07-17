@@ -6,32 +6,17 @@ Want to reach out? Send me an [email](mailto:dev.brisolara@gmail.com) 🙂
 
 ### 🕓 Recent activity
 <!--START_SECTION:waka-->
-<<<<<<< Updated upstream
-- Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-17)
-- Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-17)
-- Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-17)
-- Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-13)
-- Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-13)
-=======
 ```text
 No recent public activity.
 ```
->>>>>>> Stashed changes
 <!--END_SECTION:waka-->
 
 ### 📊 This week's stats
 <!--START_SECTION:activity-->
-<<<<<<< Updated upstream
-Commited 3 times today
-Commited 5 times this week
-Created 0 pr's today
-Created 0 pr's this week
-=======
 | Metric | Today | This week |
 |---|---|---|
 | Commits | 0 | 0 |
 | Pull requests | 0 | 0 |
->>>>>>> Stashed changes
 <!--END_SECTION:activity-->
 <!--START_SECTION:last_updated-->
 _Last updated: never_
