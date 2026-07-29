@@ -30,6 +30,9 @@ if not TOKEN.strip():
     )
 README_PATH = os.environ.get("README_PATH", "README.md")
 SHOW_PRIVATE_REPO_NAMES = os.environ.get("SHOW_PRIVATE_REPO_NAMES", "").lower() == "true"
+# Number of events in the activity feed. The README heading states this count,
+# so update the heading too if you change it.
+RECENT_ACTIVITY_COUNT = int(os.environ.get("RECENT_ACTIVITY_COUNT", "5"))
 
 API = "https://api.github.com"
 GRAPHQL = "https://api.github.com/graphql"
@@ -51,10 +54,15 @@ def get_profile():
 
 
 def date_bounds():
+    """Start of today / week (Monday) / month / year, all UTC."""
     now = datetime.datetime.now(datetime.timezone.utc)
     start_of_today = now.replace(hour=0, minute=0, second=0, microsecond=0)
-    start_of_week = start_of_today - datetime.timedelta(days=now.weekday())  # Monday
-    return start_of_today, start_of_week
+    return {
+        "Today": start_of_today,
+        "This week": start_of_today - datetime.timedelta(days=now.weekday()),
+        "This month": start_of_today.replace(day=1),
+        "This year": start_of_today.replace(month=1, day=1),
+    }
 
 
 CONTRIBUTIONS_QUERY = """
@@ -64,7 +72,6 @@ query($from: DateTime!, $to: DateTime!) {
     contributionsCollection(from: $from, to: $to) {
       totalCommitContributions
       totalPullRequestContributions
-      totalPullRequestReviewContributions
       restrictedContributionsCount
     }
   }
@@ -86,7 +93,7 @@ def gh_graphql(query, variables):
     return data["data"]
 
 
-def get_contributions(from_dt, to_dt):
+def get_contributions(from_dt, to_dt, label=""):
     """Contribution totals for a window. Includes private/org repos when the
     token belongs to the profile owner and has the `repo` scope."""
     data = gh_graphql(
@@ -108,8 +115,9 @@ def get_contributions(from_dt, to_dt):
         # Non-zero means the token cannot see the details of some private
         # contributions -> missing `repo` scope or org authorization.
         print(
-            f"Warning: {c['restrictedContributionsCount']} restricted contribution(s) "
-            "not counted. Check the PAT `repo` scope and org authorization.",
+            f"Warning [{label}]: {c['restrictedContributionsCount']} restricted "
+            "contribution(s) not counted. Check the PAT `repo` scope and org "
+            "authorization.",
             file=sys.stderr,
         )
     return c
@@ -129,7 +137,14 @@ EVENT_DESCRIPTIONS = {
 }
 
 
-def get_recent_activity(max_events=1):
+def humanize_event_type(event_type):
+    """'SponsorshipEvent' -> 'Sponsorship'; 'CommitCommentEvent' -> 'Commit Comment'.
+    Used for event types with no entry in EVENT_DESCRIPTIONS."""
+    name = re.sub(r"Event$", "", event_type or "") or "Activity"
+    return re.sub(r"(?<!^)(?=[A-Z])", " ", name)
+
+
+def get_recent_activity(max_events=RECENT_ACTIVITY_COUNT):
     # Authenticated endpoint: includes private/org events (the /events/public
     # variant never does). Requires the token to be the profile owner's.
     events = gh_get(f"{API}/users/{USERNAME}/events", params={"per_page": max_events})
@@ -152,16 +167,16 @@ def get_recent_activity(max_events=1):
             try:
                 lines.append(f"{describe(payload)} ({timestamp})")
             except Exception:
-                lines.append(f"{event_type} in {repo_name} ({timestamp})")
+                lines.append(f"{humanize_event_type(event_type)} event in {repo_name} ({timestamp})")
         else:
-            lines.append(f"{event_type} in {repo_name} ({timestamp})")
+            lines.append(f"{humanize_event_type(event_type)} event in {repo_name} ({timestamp})")
     return lines
 
 
 def render_activity_feed(lines):
     if not lines:
-        return "```text\nNo recent public activity.\n```"
-    return "```text\n" + lines[0] + "\n```"
+        return "```text\nNo recent activity.\n```"
+    return "```text\n" + "\n".join(lines) + "\n```"
 
 
 def replace_section(content, section_name, new_body):
@@ -187,20 +202,24 @@ def main():
         content = f.read()
 
     profile = get_profile()
-    start_of_today, start_of_week = date_bounds()
     now = datetime.datetime.now(datetime.timezone.utc)
-
-    today = get_contributions(start_of_today, now)
-    week = get_contributions(start_of_week, now)
+    bounds = date_bounds()
+    labels = list(bounds)
+    windows = {label: get_contributions(bounds[label], now, label) for label in labels}
     activity_lines = get_recent_activity()
 
     # Commits/PRs table (public + private/org)
-    activity_body = (
-        "| Metric | Today | This week |\n"
-        "|---|---|---|\n"
-        f"| Commits | {today['totalCommitContributions']} | {week['totalCommitContributions']} |\n"
-        f"| Pull requests | {today['totalPullRequestContributions']} | {week['totalPullRequestContributions']} |\n"
-        f"| PR reviews | {today['totalPullRequestReviewContributions']} | {week['totalPullRequestReviewContributions']} |"
+    def row(metric, field):
+        cells = " | ".join(str(windows[label][field]) for label in labels)
+        return f"| {metric} | {cells} |"
+
+    activity_body = "\n".join(
+        [
+            f"| Metric | {' | '.join(labels)} |",
+            "|---" * (len(labels) + 1) + "|",
+            row("Commits", "totalCommitContributions"),
+            row("Pull requests", "totalPullRequestContributions"),
+        ]
     )
     content = replace_section(content, "activity", activity_body)
 

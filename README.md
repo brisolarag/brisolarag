@@ -3,20 +3,19 @@
 Want to reach out? Send me an [email](mailto:dev.brisolara@gmail.com) 🙂
 
 
-### 🕓 Recent activity
+### 🕓 Recent Activity (5 lasts)
 <!--START_SECTION:waka-->
 ```text
 Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-29 20:01 UTC)
 ```
 <!--END_SECTION:waka-->
 
-### 📊 This week's stats
+### 📊 Activity stats
 <!--START_SECTION:activity-->
-| Metric | Today | This week |
-|---|---|---|
-| Commits | 4 | 6 |
-| Pull requests | 1 | 2 |
-| PR reviews | 0 | 0 |
+| Metric | Today | This week | This month | This year |
+|---|---|---|---|---|
+| Commits | 4 | 6 | 0 | 0 |
+| Pull requests | 1 | 2 | 0 | 0 |
 <!--END_SECTION:activity-->
 <!--START_SECTION:last_updated-->
 _Last updated: 2026-07-29 20:02 UTC_
