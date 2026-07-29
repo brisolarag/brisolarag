@@ -4,9 +4,15 @@ Updates README.md with:
 - Badges: join year, public repos, gists
 - Commit counts (today / this week)
 - PR counts (today / this week)
-- Recent activity feed (latest public GitHub events)
+- Recent activity feed (latest GitHub events)
+
+Counts come from the GraphQL contributionsCollection API, which includes
+private/organization repositories when the token belongs to the profile owner
+and carries the `repo` scope (and is authorized for the org).
 
 Requires GITHUB_TOKEN and GITHUB_USERNAME environment variables.
+Set SHOW_PRIVATE_REPO_NAMES=true to print private repo names in the activity
+feed; by default they are redacted, since this README is public.
 """
 
 import os
@@ -17,9 +23,16 @@ import requests
 
 USERNAME = os.environ.get("GITHUB_USERNAME", "brisolarag")
 TOKEN = os.environ["GITHUB_TOKEN"]
+if not TOKEN.strip():
+    sys.exit(
+        "GITHUB_TOKEN is empty. The workflow expects the PAT_TOKEN secret; "
+        "the default Actions GITHUB_TOKEN cannot see other repositories."
+    )
 README_PATH = os.environ.get("README_PATH", "README.md")
+SHOW_PRIVATE_REPO_NAMES = os.environ.get("SHOW_PRIVATE_REPO_NAMES", "").lower() == "true"
 
 API = "https://api.github.com"
+GRAPHQL = "https://api.github.com/graphql"
 HEADERS = {
     "Authorization": f"Bearer {TOKEN}",
     "Accept": "application/vnd.github+json",
@@ -44,36 +57,62 @@ def date_bounds():
     return start_of_today, start_of_week
 
 
-def search_count(query):
-    data = gh_get(f"{API}/search/issues", params={"q": query, "per_page": 1})
-    return data.get("total_count", 0)
+CONTRIBUTIONS_QUERY = """
+query($from: DateTime!, $to: DateTime!) {
+  viewer {
+    login
+    contributionsCollection(from: $from, to: $to) {
+      totalCommitContributions
+      totalPullRequestContributions
+      totalPullRequestReviewContributions
+      restrictedContributionsCount
+    }
+  }
+}
+"""
 
 
-def count_prs(start_of_today, start_of_week):
-    today_iso = start_of_today.strftime("%Y-%m-%dT%H:%M:%S")
-    week_iso = start_of_week.strftime("%Y-%m-%dT%H:%M:%S")
-    prs_today = search_count(f"author:{USERNAME} is:pr created:>={today_iso}")
-    prs_week = search_count(f"author:{USERNAME} is:pr created:>={week_iso}")
-    return prs_today, prs_week
+def gh_graphql(query, variables):
+    r = requests.post(
+        GRAPHQL,
+        headers=HEADERS,
+        json={"query": query, "variables": variables},
+        timeout=30,
+    )
+    r.raise_for_status()
+    data = r.json()
+    if "errors" in data:
+        raise RuntimeError(f"GraphQL error: {data['errors']}")
+    return data["data"]
 
 
-def count_commits(start_of_today, start_of_week):
-    # Usa a Search API de commits (precisa do Accept header específico)
-    headers = dict(HEADERS)
-    headers["Accept"] = "application/vnd.github.cloak-preview+json"
-
-    def commit_count(since_dt):
-        since_iso = since_dt.strftime("%Y-%m-%dT%H:%M:%S")
-        r = requests.get(
-            f"{API}/search/commits",
-            headers=headers,
-            params={"q": f"author:{USERNAME} committer-date:>={since_iso}", "per_page": 1},
-            timeout=30,
+def get_contributions(from_dt, to_dt):
+    """Contribution totals for a window. Includes private/org repos when the
+    token belongs to the profile owner and has the `repo` scope."""
+    data = gh_graphql(
+        CONTRIBUTIONS_QUERY,
+        {
+            "from": from_dt.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "to": to_dt.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        },
+    )
+    viewer = data["viewer"]
+    if viewer["login"].lower() != USERNAME.lower():
+        print(
+            f"Warning: token belongs to '{viewer['login']}', not '{USERNAME}'. "
+            "Private contributions will be missing.",
+            file=sys.stderr,
         )
-        r.raise_for_status()
-        return r.json().get("total_count", 0)
-
-    return commit_count(start_of_today), commit_count(start_of_week)
+    c = viewer["contributionsCollection"]
+    if c["restrictedContributionsCount"]:
+        # Non-zero means the token cannot see the details of some private
+        # contributions -> missing `repo` scope or org authorization.
+        print(
+            f"Warning: {c['restrictedContributionsCount']} restricted contribution(s) "
+            "not counted. Check the PAT `repo` scope and org authorization.",
+            file=sys.stderr,
+        )
+    return c
 
 
 EVENT_DESCRIPTIONS = {
@@ -91,11 +130,15 @@ EVENT_DESCRIPTIONS = {
 
 
 def get_recent_activity(max_events=1):
-    events = gh_get(f"{API}/users/{USERNAME}/events/public", params={"per_page": max_events})
+    # Authenticated endpoint: includes private/org events (the /events/public
+    # variant never does). Requires the token to be the profile owner's.
+    events = gh_get(f"{API}/users/{USERNAME}/events", params={"per_page": max_events})
     lines = []
     for event in events[:max_events]:
         event_type = event.get("type")
         repo_name = event.get("repo", {}).get("name", "")
+        if not event.get("public", True) and not SHOW_PRIVATE_REPO_NAMES:
+            repo_name = "a private repository"
         payload = dict(event.get("payload", {}))
         payload["repo_name"] = repo_name
         describe = EVENT_DESCRIPTIONS.get(event_type)
@@ -145,22 +188,24 @@ def main():
 
     profile = get_profile()
     start_of_today, start_of_week = date_bounds()
+    now = datetime.datetime.now(datetime.timezone.utc)
 
-    commits_today, commits_week = count_commits(start_of_today, start_of_week)
-    prs_today, prs_week = count_prs(start_of_today, start_of_week)
+    today = get_contributions(start_of_today, now)
+    week = get_contributions(start_of_week, now)
     activity_lines = get_recent_activity()
 
-    # Commits/PRs table
+    # Commits/PRs table (public + private/org)
     activity_body = (
         "| Metric | Today | This week |\n"
         "|---|---|---|\n"
-        f"| Commits | {commits_today} | {commits_week} |\n"
-        f"| Pull requests | {prs_today} | {prs_week} |"
+        f"| Commits | {today['totalCommitContributions']} | {week['totalCommitContributions']} |\n"
+        f"| Pull requests | {today['totalPullRequestContributions']} | {week['totalPullRequestContributions']} |\n"
+        f"| PR reviews | {today['totalPullRequestReviewContributions']} | {week['totalPullRequestReviewContributions']} |"
     )
     content = replace_section(content, "activity", activity_body)
 
     # Last updated timestamp
-    now_str = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    now_str = now.strftime("%Y-%m-%d %H:%M UTC")
     content = replace_section(content, "last_updated", f"_Last updated: {now_str}_")
 
     # Recent activity feed (replaces the old waka section)
@@ -180,6 +225,6 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-    except requests.HTTPError as e:
+    except (requests.HTTPError, RuntimeError) as e:
         print(f"GitHub API error: {e}", file=sys.stderr)
         sys.exit(1)
