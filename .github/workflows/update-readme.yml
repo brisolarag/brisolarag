@@ -2,7 +2,7 @@ name: Update README stats
 
 on:
   schedule:
-    - cron: "0 9 * * *"   # daily at 09:00 UTC (06:00 in Brasília time)
+    - cron: "0 23 * * *"  # daily at 23:00 UTC = 20:00 Brasília (UTC-3, no DST)
   workflow_dispatch:        # allows manual runs from the Actions tab
 
 permissions:
