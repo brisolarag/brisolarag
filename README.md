@@ -1,6 +1,6 @@
-# whoami → gabriel
-
 <div align="center">
+<h2>~/gabriel</h2>
+
 
 <p>Want to reach me out? <a href="mailto:dev.brisolara@gmail.com">dev.brisolara@gmail.com</a></p>
 
