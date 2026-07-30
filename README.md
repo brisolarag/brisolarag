@@ -1,6 +1,8 @@
 # Hi, I'm Gabriel 👋
 
-Want to reach out? Send me an [email](mailto:dev.brisolara@gmail.com) 🙂
+Want to reach me out?
+
+[dev.brisolara@gmail.com](mailto:dev.brisolara@gmail.com) - [gabriel-brisolara (linkedin)](https://www.linkedin.com/in/gabriel-brisolara/) - [gbrisolara (instagram)](https://instagram.com/gbrisolara) - [devbrisolara (tiktok)](https://www.tiktok.com/@devbrisolara)
 
 
 ### 🕓 Recent Activity (5 lasts)
