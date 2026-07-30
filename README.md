@@ -1,9 +1,17 @@
-# Hi, I'm Gabriel 👋
+# whoami → gabriel
 
-Want to reach me out?
+<div align="center">
 
-[dev.brisolara@gmail.com](mailto:dev.brisolara@gmail.com) - [gabriel-brisolara (linkedin)](https://www.linkedin.com/in/gabriel-brisolara/) - [gbrisolara (instagram)](https://instagram.com/gbrisolara) - [devbrisolara (tiktok)](https://www.tiktok.com/@devbrisolara)
+<p>Want to reach me out? <a href="mailto:dev.brisolara@gmail.com">dev.brisolara@gmail.com</a></p>
 
+<a href="https://www.linkedin.com/in/gabriel-brisolara/">https://www.linkedin.com/in/gabriel-brisolara/</a> -
+<a href="https://instagram.com/gbrisolara">https://instagram.com/gbrisolara</a> -
+<a href="https://www.tiktok.com/@devbrisolara">https://www.tiktok.com/@devbrisolara</a>
+
+</div>
+
+</br>
+</br>
 
 ### 🕓 Recent Activity (5 lasts)
 <!--START_SECTION:waka-->
