@@ -1,18 +1,26 @@
-# Hi, I'm Gabriel 👋
+<div align="center">
+<h2>~/gabriel</h2>
 
-Want to reach me out?
 
-[dev.brisolara@gmail.com](mailto:dev.brisolara@gmail.com) - [gabriel-brisolara (linkedin)](https://www.linkedin.com/in/gabriel-brisolara/) - [gbrisolara (instagram)](https://instagram.com/gbrisolara) - [devbrisolara (tiktok)](https://www.tiktok.com/@devbrisolara)
+<p>Want to reach me out? <a href="mailto:dev.brisolara@gmail.com">dev.brisolara@gmail.com</a></p>
 
+<a href="https://www.linkedin.com/in/gabriel-brisolara/">https://www.linkedin.com/in/gabriel-brisolara/</a> -
+<a href="https://instagram.com/gbrisolara">https://instagram.com/gbrisolara</a> -
+<a href="https://www.tiktok.com/@devbrisolara">https://www.tiktok.com/@devbrisolara</a>
+
+</div>
+
+</br>
+</br>
 
 ### 🕓 Recent Activity (5 lasts)
 <!--START_SECTION:waka-->
 ```text
-Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-29 20:20 UTC)
-Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-29 20:15 UTC)
-Pushed 1 commit(s) to brisolarag/brisolarag (2026-07-29 20:01 UTC)
-Pushed 1 commit(s) to a private repository (2026-07-29 19:54 UTC)
-Pushed 1 commit(s) to a private repository (2026-07-29 19:35 UTC)
+Pushed 1 commit(s) to a private repository (2026-08-12 16:19 UTC)
+Deleted branch in a private repository (2026-08-10 16:22 UTC)
+Pushed 1 commit(s) to a private repository (2026-08-10 16:21 UTC)
+Merged a pull request in a private repository (2026-08-10 16:21 UTC)
+Pull Request Review event in a private repository (2026-08-10 16:21 UTC)
 ```
 <!--END_SECTION:waka-->
 
@@ -20,11 +28,11 @@ Pushed 1 commit(s) to a private repository (2026-07-29 19:35 UTC)
 <!--START_SECTION:activity-->
 | Metric | Today | This week | This month | This year |
 |---|---|---|---|---|
-| Commits | 6 | 8 | 46 | 102 |
-| Pull requests | 1 | 2 | 14 | 20 |
+| Commits | 0 | 1 | 4 | 116 |
+| Pull requests | 0 | 0 | 0 | 21 |
 <!--END_SECTION:activity-->
 <!--START_SECTION:last_updated-->
-_Last updated: 2026-07-29 23:50 UTC_
+_Last updated: 2026-08-13 11:28 UTC_
 <!--END_SECTION:last_updated-->
 
 [![Gabriel's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=brisolarag&theme=github-compact&line=006aff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
