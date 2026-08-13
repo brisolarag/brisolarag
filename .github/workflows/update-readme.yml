@@ -2,7 +2,11 @@ name: Update README stats
 
 on:
   schedule:
-    - cron: "0 23 * * *"  # daily at 23:00 UTC = 20:00 Brasília (UTC-3, no DST)
+    # Cron is UTC-only. Brasília is UTC-3 year-round (no DST since 2019).
+    - cron: "30 11 * * *"  # 08:30 Brasília
+    - cron: "0 15 * * *"   # 12:00 Brasília
+    - cron: "0 18 * * *"   # 15:00 Brasília
+    - cron: "0 21 * * *"   # 18:00 Brasília
   workflow_dispatch:        # allows manual runs from the Actions tab
 
 permissions:
