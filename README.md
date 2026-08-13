@@ -16,11 +16,11 @@
 ### 🕓 Recent Activity (5 lasts)
 <!--START_SECTION:waka-->
 ```text
-Pushed 1 commit(s) to brisolarag/brisolarag (2026-08-13 11:43 UTC)
-Pushed 1 commit(s) to a private repository (2026-08-13 11:36 UTC)
-Pushed 1 commit(s) to a private repository (2026-08-12 16:19 UTC)
-Deleted branch in a private repository (2026-08-10 16:22 UTC)
-Pushed 1 commit(s) to a private repository (2026-08-10 16:21 UTC)
+Assigned a pull request in a private repository (2026-08-13 18:27 UTC)
+Labeled a pull request in a private repository (2026-08-13 18:27 UTC)
+Labeled a pull request in a private repository (2026-08-13 18:27 UTC)
+Labeled a pull request in a private repository (2026-08-13 18:27 UTC)
+Labeled a pull request in a private repository (2026-08-13 18:27 UTC)
 ```
 <!--END_SECTION:waka-->
 
@@ -29,10 +29,10 @@ Pushed 1 commit(s) to a private repository (2026-08-10 16:21 UTC)
 | Metric | Today | This week | This month | This year |
 |---|---|---|---|---|
 | Commits | 2 | 3 | 6 | 118 |
-| Pull requests | 0 | 0 | 0 | 21 |
+| Pull requests | 2 | 2 | 2 | 23 |
 <!--END_SECTION:activity-->
 <!--START_SECTION:last_updated-->
-_Last updated: 2026-08-13 15:45 UTC_
+_Last updated: 2026-08-13 19:07 UTC_
 <!--END_SECTION:last_updated-->
 
 [![Gabriel's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=brisolarag&theme=github-compact&line=006aff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
