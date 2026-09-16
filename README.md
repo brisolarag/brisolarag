@@ -35,8 +35,6 @@ Pushed 1 commit(s) to a private repository (2026-09-04 18:29 UTC)
 _Last updated: 2026-09-16 18:30 UTC_
 <!--END_SECTION:last_updated-->
 
-[![Gabriel's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=brisolarag&theme=github-compact&line=006aff&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
 <div align="center">
 
 ![Joined GitHub in 2023](https://img.shields.io/badge/Joined-2023-blue)
