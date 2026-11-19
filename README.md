@@ -29,10 +29,10 @@ Pull Request Review event in a private repository (2026-11-18 14:42 UTC)
 | Metric | Today | This week | This month | This year |
 |---|---|---|---|---|
 | Commits | 0 | 1 | 43 | 320 |
-| Pull requests | 2 | 5 | 45 | 125 |
+| Pull requests | 0 | 5 | 45 | 125 |
 <!--END_SECTION:activity-->
 <!--START_SECTION:last_updated-->
-_Last updated: 2026-11-18 22:23 UTC_
+_Last updated: 2026-11-19 00:04 UTC_
 <!--END_SECTION:last_updated-->
 
 <div align="center">
